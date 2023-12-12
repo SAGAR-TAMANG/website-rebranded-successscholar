@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2vh;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin-right: 5vh;
+}
+
+nav ul a {
+  text-decoration: none;
+}
+
+#home {
+  height: 100vh;
+  background-image: url(../img/bg.png);
+  background-size: 125% 100%;
+}
+
+.main-text {
+  font-size: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-bg-1 {
+  font-size: 3vh;
+  padding: 4vh 8vh;
+  position: fixed;
+  backdrop-filter: blur(3px) saturate(130%);
+  -webkit-backdrop-filter: blur(3px) saturate(130%);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  border: 3px solid rgba(209, 213, 219, 0.1);
+  transform: translateY(25vh);
+}
+
+button {
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  border: none;
+  padding: 2.5vh 5vh;
+  position: fixed;
+  transform: translateY(40vh);
+}
