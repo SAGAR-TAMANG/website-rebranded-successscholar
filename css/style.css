@@ -41,25 +41,36 @@ nav ul a {
 
 .glass-bg-1 {
   font-weight: bold;
-  font-size: 3vh;
-  padding: 4vh 8vh;
+  font-size: 5vh;
+  padding: 2vh 6vh;
   position: absolute;
   backdrop-filter: blur(3px) saturate(130%);
   -webkit-backdrop-filter: blur(3px) saturate(130%);
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 30px;
   border: 3px solid rgba(209, 213, 219, 0.1);
-  transform: translateY(32vh);
+  transform: translate(50vh, -10vh);
+
+  z-index: 2;
 }
 
-button {
+.main-text button {
   background-color: white;
   color: black;
   border-radius: 30px;
   border: none;
   padding: 2.5vh 5vh;
   position: absolute;
-  transform: translateY(44vh);
+  transform: translateY(30vh);
+  z-index: 2;
+}
+
+.sub-text {
+  font-size: 3vh;
+  
+  position: absolute;
+  z-index: 2;
+  transform: translateY(18vh);
 }
 
 .card {
@@ -69,7 +80,7 @@ button {
   border-radius: 30px;
   /* border: 3px solid rgba(209, 213, 219, 0.1); */
   transform: translateY(32vh);
-  /* display: absolute; */
+  display: absolute;
 }
 
 #section-first {
@@ -78,6 +89,56 @@ button {
   background-size: 125% 200%;
   background-position: bottom;
   padding: 0px 100px;
+}
+
+.cube {
+  height: 50vh;
+  width: 50vh;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px) saturate(130%);
+  -webkit-backdrop-filter: blur(3px) saturate(130%);
+  clip-path: polygon(50% 25%, 100% 50%, 50% 75%, 0% 50%);
+  transform: translateY(-17vh);
+  position: absolute;
+}
+
+.cube-2 {
+  height: 50vh;
+  width: 50vh;
+  
+  background: rgba( 255, 255, 255, 0.1 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+
+  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+
+  clip-path: polygon(0 25%, 50% 50%, 50% 100%, 0 75%);
+  transform: translateY(-4.5vh);
+  position: absolute;
+}
+
+.cube-3 {
+  height: 50vh;
+  width: 50vh;
+
+  background: rgba( 255, 255, 255, 0.1 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  
+  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+  
+  clip-path: polygon(100% 25%, 50% 50%, 50% 100%, 100% 75%);
+  transform: translateY(-4.5vh);
+  position: absolute;
+}
+
+.cube-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* clip-path: circle(50% at 50% 50%);   */
+  z-index: 1;
 }
 
 .container,
@@ -127,77 +188,6 @@ button {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 15vw); /* Set the height of each row to 100 pixels */
   gap: 16px;
-}
-
-.grid-item {
-  background-color: #e0e0e0;
-  padding: 0;
-  text-align: center;
-}
-
-.item-a {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  /* background-color: red; */
-}
-
-.item-b {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  /* background-color: red; */
-}
-
-.item-c {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  /* background-color: red; */
-}
-
-.item-d {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  /* background-color: red; */
-}
-
-.item-d {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  /* background-color: red; */
-}
-
-.item-e {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  border: 2px dashed var(--text);
-  border-radius: 20px;
-}
-
-.item-f {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  border: 2px dashed var(--text);
-  border-radius: 20px;
-}
-
-nav> .container {
-  display: flex;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .row {
