@@ -34,17 +34,19 @@
           <div class="cube-3">
           </div>
         </div>
+      </section>
+      <section id="services">
         <div class="section-first">
           <div class="card">
             <div class="container">
               <div class="row">
                 <div class="col-6">
                   <div class="div1">
-                    <img src="img/successscolar_second_logo.jpeg" alt="ss" style="max-height: 100vh; width: 60%; height: auto;">
+                    <img src="img/successscolar_second_logo.jpeg" alt="ss">
                   </div>
                 </div>
                 <div class="col-6">
-                  <div class="div1 fs-2">
+                  <div class="div2 fs-2">
                     Empowering students with the skills they need to prosper in the real world of professional responsibilities.
                   </div>
                 </div>
@@ -52,8 +54,9 @@
             </div>
           </div>
         </div>
-      </section>
-      <section id="services">
+        <p class="fs-5">
+          Our Services
+        </p>
         <div class="container">
           <div class="row">
             <div class="col-4">
@@ -455,9 +458,93 @@
           </div>
         </div>
       </section>
+      <section id="exploreForm">
+        <p class="fs-5 text-center">
+          Contact Us
+        </p>
+        <form id="myFormContact" action="https://formspree.io/f/xdoqndba" method="POST">
+          <label for="name">
+            Name:
+            <input type="text" id="name" name="name">
+          </label>
+          <br>
+          <label for="school">
+            School/College Name:
+            <input type="text" id="school" name="school">
+          </label>
+          <br>
+          <label for="subject">
+            Subject/Stream:
+            <input type="text" id="subject" name="subject">
+          </label>
+          <br>
+          <label for="email">
+            Email:
+            <input type="email" id="email" name="email">
+          </label>
+          <br>
+          <label for="phone">
+            Phone:
+            <input type="tel" id="phone" name="phone">
+          </label>
+          <br>
+          <!-- <label for="terms" class="d-flex align-items-center justify-content-start">
+            <input type="checkbox" style="margin: 0; padding: 0; width: 5%;" id="terms"> I agree to the Privacy Policy.
+          </label>
+          <br> -->
+          <!-- <button class="btn-2" type="submit" onclick="submitForm(event)">Send</button> -->
+          <button class="btn-2" type="submit">Send</button>
+        </form>
+      </section>
     </main>
-  <footer>
-
-  </footer>
+    <footer class="bg-inverse">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <p class="text-center fs-5">SUCCESS SCHOLAR</p>
+        </div>
+        <div class="col-12 col-sm-4 col-lg-2">
+          <span class="fs-2 text-bold">Quick Links</span>
+          <br>
+          <ul type="none" style="display: block; padding:0;">
+            <li><a href="templates/people-and-leadership.html" class="inverse pt-3">People & Leadership</a></li>
+            <li><a href="./about.html" class="inverse">About</a></li>
+            <li><a href="./templates/Career.html" class="inverse">Career</a></li>
+            <br>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-4 col-lg-2">
+          <span class="fs-2 text-bold">Social</span>
+          <br>
+          <ul type="none" style="display: block; padding:0;">
+            <li><a href="#" class="inverse pt-3">LinkedIn</a></li>
+            <li><a href="#" class="inverse">Instagram</a></li>
+            <br>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-4 col-lg-2">
+          <span class="fs-2 text-bold">Get in Touch</span>
+          <br>
+          <ul type="none" style="display: block; padding:0;">
+            <li><a href="./contact.html" class="inverse pt-3">Contact Us</a></li>
+            <li><a href="#" class="inverse">Our Offices</a></li>
+            <br>
+          </ul>
+        </div>
+      </div>
+      <!-- <span class="divider mx-5"></div> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 mt-3 text-center">
+            <span class="">© 2023 TAMANG GROUP</span> 
+          </div>
+          <div class="col-12 col-sm-6 my-3 text-center fs-0">
+            Built with <span class="fa-regular fa-heart"></span> by 
+            <!-- <a href="https://www.kzu.ac.in/" class="footer-anchor" target="_blank"> -->
+              the Success Scholar IT Team
+            <!-- </a>        -->
+          </div>
+        </div>
+      </div>
+    </footer>  
 </body>
 </html>

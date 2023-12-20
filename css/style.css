@@ -25,8 +25,25 @@ nav ul a {
   text-decoration: none;
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
+.bg-inverse {
+  color: white;
+  background-color: #0d1266;
+}
+
+.text-blue {
+  color: #0d1266;
+}
+
+.text-center {
+  text-align: center;
+}
+
 #home {
-  /* height: 200vh; */
+  height: 100vh;
   background-image: url(../img/bg.png);
   background-size: cover;
   background-position: bottom;
@@ -65,6 +82,19 @@ nav ul a {
   z-index: 2;
 }
 
+.main-text a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-text button:hover {
+  background-color: rgb(209, 209, 209);
+}
+
+.main-text button:active {
+  background-color: rgb(109, 109, 109);
+}
+
 .sub-text {
   font-size: 3vh;
   
@@ -76,26 +106,37 @@ nav ul a {
 .card {
   backdrop-filter: blur(3px) saturate(130%);
   -webkit-backdrop-filter: blur(3px) saturate(130%);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 30px;
   /* border: 3px solid rgba(209, 213, 219, 0.1); */
-  transform: translateY(32vh);
-  display: absolute;
+  transform: translateY(-10vh);
+  position: static;
+  border: 10px 10px;
+  margin: 0vh 20vh;
+  overflow: hidden;
 }
 
-.section-first {
-  height: 100vh;
-  /* background-image: url(../img/bg.png);
-  background-size:cover;
-  background-position: bottom; */
-  padding: 0px 100px;
+.section-first .card .row .div1 img{
+  max-height: 10vh;
 }
 
-.section-first .card .row .div1{
+.section-first .card .row .div1 {
+  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 50px 50px;
+  color: black;
+}
+
+.section-first .card .row .div2 {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 50px;
+  color: white;
+  background-color: #0d1266;
 }
 
 .cube {
@@ -151,23 +192,31 @@ nav ul a {
 #services {
   background-image: url(../img/bg-inverse.png);
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
+}
+
+#services p {
+  padding: 0px 100px;
+  text-align: center;
+  /* transform: translateY(-10vh); */
+  z-index: 2;
+  /* margin-top: 2vh; */
 }
 
 .card-main {
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 30px 50px;
   margin: 10px 10px;
-  border-radius: 25px;
+  border-radius: 8px;
   height: 25vh;
   display: flex;
   align-items: center;
-  transform: 2s ease-in-out;
+  transform: 2s ease-out;
 }
 
 .card-main:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  transform: 2s ease-in-out;
+  transform: 2s ease-out;
   /* cursor: pointer; */
 }
 
@@ -187,6 +236,42 @@ nav ul a {
 .card-main a:hover {
   transform: 100ms ease-in-out;
   color: gray;
+}
+
+#exploreForm {
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-position: top;
+  padding: 10vh 50vh 20vh 50vh;
+}
+
+form input {
+  width: 100%;
+  height: 5vh;
+  color: black;
+}
+
+form button {
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  border: none;
+  padding: 1.5vh 3vh;
+  margin: 1vh 0vh;
+  position: absolute;
+  z-index: 2;
+}
+
+form button:hover {
+  background-color: rgb(209, 209, 209);
+}
+
+form button:active {
+  background-color: rgb(109, 109, 109);
+}
+
+footer {
+  padding: 8vh 5vh;
 }
 
 .fs-0{
