@@ -38,6 +38,18 @@ nav ul a {
   color: #0d1266;
 }
 
+.text-black {
+  color: black;
+}
+
+.text-green {
+  color: green;
+}
+
+.text-purple {
+  color: purple;
+}
+
 .d-flex{
   display: flex;
 }
@@ -66,23 +78,24 @@ nav ul a {
 }
 
 .main-text {
-  font-size: 25vh;
+  font-size: 18vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8vh 8vw 1vh 5vw;
 }
 
 .glass-bg-1 {
   font-weight: bold;
-  font-size: 5vh;
-  padding: 2vh 6vh;
+  font-size: 2.5vw;
+  padding: 2vw 5vw;
   position: absolute;
   backdrop-filter: blur(3px) saturate(130%);
   -webkit-backdrop-filter: blur(3px) saturate(130%);
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 30px;
   border: 3px solid rgba(209, 213, 219, 0.1);
-  transform: translate(50vh, -10vh);
+  transform: translate(35vw, -7vw);
 
   z-index: 2;
 }
@@ -112,24 +125,11 @@ nav ul a {
 }
 
 .sub-text {
-  font-size: 3vh;
+  font-size: 3vw;
   
   position: absolute;
   z-index: 2;
   transform: translateY(18vh);
-}
-
-#services .card {
-  backdrop-filter: blur(3px) saturate(130%);
-  -webkit-backdrop-filter: blur(3px) saturate(130%);
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 30px;
-  /* border: 3px solid rgba(209, 213, 219, 0.1); */
-  transform: translateY(-10vh);
-  position: static;
-  border: 10px 10px;
-  margin: 0vh 20vh;
-  overflow: hidden;
 }
 
 #about .card {
@@ -147,6 +147,18 @@ nav ul a {
 
 .overflow-hidden {
   overflow: hidden !important;
+}
+
+#services .card {
+  backdrop-filter: blur(3px) saturate(130%);
+  -webkit-backdrop-filter: blur(3px) saturate(130%);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 30px;
+  /* border: 3px solid rgba(209, 213, 219, 0.1); */
+  transform: translateY(-10vh);
+  position: static;
+  margin: 0vh 10vw;
+  overflow: hidden;
 }
 
 .section-first .card .row .div1 img{
@@ -195,20 +207,20 @@ nav ul a {
 }
 
 .cube {
-  height: 50vh;
-  width: 50vh;
+  height: 25vw;
+  width: 25vw;
 
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(3px) saturate(130%);
   -webkit-backdrop-filter: blur(3px) saturate(130%);
   clip-path: polygon(50% 25%, 100% 50%, 50% 75%, 0% 50%);
-  transform: translateY(-17vh);
+  transform: translateY(-17vw);
   position: absolute;
 }
 
 .cube-2 {
-  height: 50vh;
-  width: 50vh;
+  height: 25vw;
+  width: 25vw;
   
   background: rgba( 255, 255, 255, 0.1 );
   backdrop-filter: blur( 20px );
@@ -217,13 +229,13 @@ nav ul a {
   /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 
   clip-path: polygon(0 25%, 50% 50%, 50% 100%, 0 75%);
-  transform: translateY(-4.5vh);
+  transform: translateY(-10.8vw);
   position: absolute;
 }
 
 .cube-3 {
-  height: 50vh;
-  width: 50vh;
+  height: 25vw;
+  width: 25vw;
 
   background: rgba( 255, 255, 255, 0.1 );
   backdrop-filter: blur( 20px );
@@ -232,7 +244,7 @@ nav ul a {
   /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
   
   clip-path: polygon(100% 25%, 50% 50%, 50% 100%, 100% 75%);
-  transform: translateY(-4.5vh);
+  transform: translateY(-10.8vw);
   position: absolute;
 }
 
@@ -297,7 +309,7 @@ nav ul a {
   background-image: url(../img/bg.png);
   background-size: cover;
   background-position: top;
-  padding: 10vh 50vh 20vh 50vh;
+  padding: 5vw 25vw 10vw 25vw;
 }
 
 form input {
@@ -329,7 +341,7 @@ form button:active {
   display: none;
   cursor: pointer;
 
-  padding: 3px 10px;
+  padding: 10px 25px;
   border-radius: 100%;
   border: none;
   width: auto;
