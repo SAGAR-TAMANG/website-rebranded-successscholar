@@ -298,6 +298,7 @@ nav ul a {
 .card-main a {
   transform: 100ms ease-in-out;
   text-decoration: none;
+  font-size: 1em;
 }
 
 .card-main a:hover {
@@ -305,10 +306,18 @@ nav ul a {
   color: gray;
 }
 
+.card-main .header {
+  font-size: 1.1em !important;
+}
+
+.card-main .body {
+  font-size: 1em !important;
+}
+
 #exploreForm {
-  background-image: url(../img/bg.png);
+  background-image: url(../img/bg-inverse.png);
   background-size: cover;
-  background-position: top;
+  background-position: center;
   padding: 5vw 25vw 10vw 25vw;
 }
 
