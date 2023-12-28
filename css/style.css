@@ -251,7 +251,7 @@ nav ul a {
   position: absolute;
   text-align: center;
   line-height: 50px;
-  background: #fff;
+  background: #cacaca;
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(0,0,0,0.23);
   transform: translateY(-50%);
@@ -461,8 +461,8 @@ nav ul a {
 #exploreForm {
   background-image: url(../img/bg.png);
   background-size: cover;
-  background-position: center;
-  padding: 5vw 25vw 10vw 25vw;
+  background-position: top;
+  padding: 10vh 15vw 20vh 15vw;
 }
 
 form input {
