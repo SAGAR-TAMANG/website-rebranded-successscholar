@@ -132,19 +132,6 @@ nav ul a {
   transform: translateY(18vh);
 }
 
-#about .card {
-  backdrop-filter: blur(3px) saturate(130%);
-  -webkit-backdrop-filter: blur(3px) saturate(130%);
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 30px;
-  /* border: 3px solid rgba(209, 213, 219, 0.1); */
-  /* transform: translateY(-10vh); */
-  position: static;
-  border: 10px 10px;
-  margin: 0vh 20vh;
-  overflow: hidden;
-}
-
 .overflow-hidden {
   overflow: hidden !important;
 }
@@ -184,13 +171,36 @@ nav ul a {
   background-color: #0d1266;
 }
 
+#about {  
+  /* height: 100vh; */
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  background-position: top;
+  padding: 10vh 0vw;
+}
+
+#about .card {
+  backdrop-filter: blur(3px) saturate(130%);
+  -webkit-backdrop-filter: blur(3px) saturate(130%);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  border: 3px solid rgba(209, 213, 219, 0.2);
+  /* transform: translateY(-10vh); */
+  position: static;
+  border: 10px 10px;
+  margin: 0vh 8vw;
+  padding: 5vh;
+  overflow: hidden;
+}
+
 #about .div1 {
-  height: 20vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 10px;
+  /* padding: 0px; */
   color: black;
+  overflow: hidden;
 }
 
 /* #about .div1 img{
@@ -198,12 +208,17 @@ nav ul a {
 } */
 
 #about .div2 {
-  /* display: flex;
+  /* height: 50vh; */
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
   /* padding: 50px 50px; */
   color: white;
-  background-color: #0d1266;
+  /* background-color: #0d1266; */
+}
+
+#about .div2 .in-stuff {
+  padding: 0px 10px;
 }
 
 .cube {
@@ -360,13 +375,6 @@ form button:active {
 
 footer {
   padding: 8vh 5vh;
-}
-
-#about {  
-  height: 100vh;
-  background-image: url(../img/bg.png);
-  background-size: cover;
-  background-position: top;
 }
 
 .align-items-center {
@@ -1100,43 +1108,61 @@ footer {
   padding-left: 3rem !important;
 }
 
-@media screen and (max-width: 992px) {
-  #nav{
-    display: block;
-    padding: 0px;
+.order-first {
+  order: -1 !important;
+}
+
+.order-0 {
+  order: 0 !important;
+}
+
+.order-1 {
+  order: 1 !important;
+}
+
+.order-2 {
+  order: 2 !important;
+}
+
+.order-3 {
+  order: 3 !important;
+}
+
+.order-4 {
+  order: 4 !important;
+}
+
+.order-5 {
+  order: 5 !important;
+}
+
+.order-last {
+  order: 6 !important;
+}
+
+@media (min-width: 992px) {
+  .order-lg-first {
+    order: -1 !important;
   }
-
-  ul{
-    display: block;
-    padding: 60px;
+  .order-lg-0 {
+    order: 0 !important;
   }
-
-  li {
-      margin-right: 0;
-      margin-bottom: 15px;
-      font-size: 20px;
+  .order-lg-1 {
+    order: 1 !important;
   }
-
-  .menu-toggle {
-    display: block;
+  .order-lg-2 {
+    order: 2 !important;
   }
-
-  .navbar {
-    position: absolute;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    transition: 0.5s;
-
-    /* Glassmorphism */
-    background: var(--navbar-color);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 20px );
-    -webkit-backdrop-filter: blur( 20px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  .order-lg-3 {
+    order: 3 !important;
+  }
+  .order-lg-4 {
+    order: 4 !important;
+  }
+  .order-lg-5 {
+    order: 5 !important;
+  }
+  .order-lg-last {
+    order: 6 !important;
   }
 }
